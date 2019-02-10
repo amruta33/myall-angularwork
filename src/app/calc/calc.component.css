@@ -1,0 +1,18 @@
+.container
+{
+  width: 960px;
+  background-color: azure;
+}
+#panel {
+  /* calculator er display er jonne ai id kora hoie */
+  text-align: right;
+  width: 274px;
+  height: 80px;
+  font-size: 26px;
+  background-color: white;
+}
+
+#panel:hover {
+  /* calculator er display er jonne ai id kora hoie */
+  cursor: col-resize;
+}

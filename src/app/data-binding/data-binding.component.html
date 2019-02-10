@@ -1,0 +1,65 @@
+
+  <div class="row">
+    <div class="col-md-12">
+      <h2>
+        Hello..! {{name}} welcome to home</h2>
+       <p> calc: {{55*22}}</p>
+        Today's Date is {{date()}}
+
+    </div>
+  </div>
+  <div class="row">
+      <div class="col-md-12">
+        <input type= "{{type}}">
+        <input [type] = "type1">
+        <input [type]= "'button'" value="ok" >
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <p [style.border]="'2px dotted red'" [style.text-align]="'center'"> Hllo Amruta</p>
+
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12">
+            <p [class.alert]="true" [class.alert-info]="true">Angular is easy to learn just grab it</p>
+
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-12">
+
+  <input type="button" value="ok" class="btn btn-success" (click)="myclick($event)" >
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <input type= "button" value="Hello" class="btn btn-warning" (click)="makeAlert('warning')">
+                <input type= "button" value="Hello" class="btn btn-success" (click)="makeAlert('success')">
+                <input type= "button" value="Hello" class="btn btn-danger" (click)="makeAlert('danger')">
+                <input type= "button" value="Hello" class="btn btn-info" (click)="makeAlert('info')">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-12">
+                <p [class.alert]="true"
+                [class.alert-warning]="alertStatus.isWarning"
+                [class.alert-info]="alertStatus.isInfo"
+                [class.alert-danger]="alertStatus.isDanger"
+                [class.alert-success]="alertStatus.isSuccess"> hello welcome to my world</p>
+              </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                  <input type="number"  [(ngModel)]="myVar" name="myVar">
+                    <input type="number" [(ngModel)]="myVar1" name="myVar1">
+                  <input type="button" (click)="myAdd()" value="sum">
+                </div>
+                <p> the sume of {{myVar}}  and {{myVar1}} in<button [class.btn-success]="true">Total : {{res}}</button> </p>
+
+              </div>
